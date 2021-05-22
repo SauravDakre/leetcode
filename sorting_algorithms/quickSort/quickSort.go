@@ -1,7 +1,5 @@
 package quickSort
 
-import "fmt"
-
 func sort(arr []int) {
 	quickSort(arr, 0, len(arr)-1)
 }
