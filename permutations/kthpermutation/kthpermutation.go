@@ -20,6 +20,7 @@ func getPermutation(n int, k int) string {
 		m[n] = fact(n)
 
 		index := k / m[n]
+		// edge scenario
 		if k%m[n] == 0 {
 			index -= 1
 		}
