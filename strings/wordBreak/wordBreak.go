@@ -14,9 +14,8 @@ func wordBreak(s string, wordDict []string) bool {
             
             if(i-j > maxlen || !dp[j]){
                     continue
-                }
+            }
             if _,ok:=wm[s[j:i]];ok{
-                
                 dp[i] = true
             }
             // fmt.Println(dp, s[j:i], i, j)
