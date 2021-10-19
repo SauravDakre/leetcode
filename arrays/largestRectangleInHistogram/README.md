@@ -7,3 +7,6 @@ Given an array of integers heights representing the histogram's bar height where
 Ex:
 Input: heights = [2,1,5,6,2,3]
 Output: 10
+
+https://www.youtube.com/watch?v=ZmnqCZp9bBs&t=750s
+

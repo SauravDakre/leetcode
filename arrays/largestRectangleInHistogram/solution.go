@@ -7,10 +7,13 @@ func largestRectangleArea(heights []int) int {
 	i := 0
 	for i < len(heights) {
 		// fmt.Println(stack, i)
+		// store value in stack in increasing order
 		if len(stack) == 0 || heights[stack[len(stack)-1]] < heights[i] {
 			stack = append(stack, i)
 			i++
 		} else {
+			// if top value is greater than current value, pop elements till we we find top value less than the current value
+			// and calculate the area
 			top := stack[len(stack)-1]
 			stack = stack[:len(stack)-1]
 			width := i
